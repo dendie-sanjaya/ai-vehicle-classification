@@ -6,3 +6,6 @@ torchaudio
 opencv-python
 numpy
 requests
+ultralytics 
+opencv-python 
+numpy
