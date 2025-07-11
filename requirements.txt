@@ -1,0 +1,8 @@
+python-dotenv
+Tensorflow
+torch
+torchvision
+torchaudio
+opencv-python
+numpy
+requests
