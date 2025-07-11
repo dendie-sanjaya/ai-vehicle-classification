@@ -64,13 +64,13 @@ class TrafficAnalysisApp:
 # --- Bagian Utama untuk Menjalankan Aplikasi ---
 if __name__ == "__main__":
     # Pastikan direktori untuk contoh gambar ada
-    sample_images_dir = "sample_images"
+    sample_images_dir = "storage_photo"
     if not os.path.exists(sample_images_dir):
         os.makedirs(sample_images_dir)
         print(f"Direktori '{sample_images_dir}' dibuat.")
         print("Pastikan untuk menempatkan gambar jalan raya asli di folder ini untuk pengujian.")
         # Buat file dummy agar script tidak crash, tetapi deteksi akan nol
-        with open(os.path.join(sample_images_dir, "dummy_foto.jpg"), "w") as f:
+        with open(os.path.join(sample_images_dir, "capture.jpg"), "w") as f:
             f.write("dummy content")
 
     # Inisialisasi aplikasi dengan YOLOv8x (model paling akurat)
@@ -79,7 +79,7 @@ if __name__ == "__main__":
 
     # Contoh penggunaan:
     # Ganti dengan path ke gambar asli Anda di folder sample_images
-    target_image_name = "foto-4.jpg" # <--- Menggunakan foto-1.jpeg sesuai diskusi sebelumnya
+    target_image_name = "capture.jpg" # <--- Menggunakan capture.jpeg sesuai diskusi sebelumnya
     sample_image_path = os.path.join(sample_images_dir, target_image_name)
 
     found_real_image = False
@@ -88,7 +88,7 @@ if __name__ == "__main__":
     
     if not found_real_image:
         print(f"\n[PERINGATAN] Gambar '{target_image_name}' tidak terdeteksi di '{sample_images_dir}' atau terlalu kecil.")
-        print("Pastikan Anda telah menempatkan foto lalu lintas asli (misalnya, foto-1.jpeg) di folder tersebut.")
+        print("Pastikan Anda telah menempatkan foto lalu lintas asli (misalnya, capture.jpeg) di folder tersebut.")
         # Jika gambar target tidak ditemukan, cari gambar lain yang valid di folder tersebut
         for fname in os.listdir(sample_images_dir):
             fpath = os.path.join(sample_images_dir, fname)
