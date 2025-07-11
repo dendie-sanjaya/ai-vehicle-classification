@@ -18,9 +18,9 @@ When the system gets a picture, **Artificial Intelligence (AI) with Machine Lear
 
 1.  **Getting the Photo Ready:** Our main computer program (a Python script) is made to take these picture files. It can get them from you uploading a file, from a folder on the computer, or straight from the cameras.
 
-Sample Photo Area Parkir
+    Sample Photo Area Parkir
 
-![ss](./sample_images/capture.jpg)
+    ![ss](./sample_images/capture.jpg)
 
 
 2.  **The "Watcher" Finds New Photos:**
@@ -30,7 +30,7 @@ Sample Photo Area Parkir
 
     **watcher.py** 
 
-    ![script](./watcher.py)
+    ![script watcher.py](watcher.py)
 
     * If you put a new picture in that folder, or if an old picture changes, the watcher quickly finds it.
     * Once the watcher sees a change, it automatically tells the main program (`app.py`) to start working on that new or changed picture right away. This means you don't have to manually tell the system to check every new photo.
@@ -41,13 +41,13 @@ Sample Photo Area Parkir
     * **Check How Busy:** It can guess how full or busy the parking lot is.
     After looking at the picture, the AI gives us numbers and details.
 
-     ![script](./app.py)   
+     ![script app.py](./app.py)   
 
 4.  **Getting the Results Clear:** After the AI does its job, we take all the numbers and details (like car counts, types) and put them into a neat, easy-to-read list.
 
 5.  **Saving the Information:** Finally, all these clear results are automatically saved into a special storage place called a **database**. This database keeps a history of everything, so we can always look back, see how parking changes over time, make reports, and help decide things for the future.
 
-   ![ss](./ss/2.jpg)
 
+     ![ss](./ss/2.jpg)
 
-So, this new system helps us know how parking spaces are being used very easily and without much work from people. It gives useful information to manage parking better and helps city planners.
+ so  , this new system helps us know how parking spaces are being used very easily and without much work from people. It gives useful information to manage parking better and helps city planners.
