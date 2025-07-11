@@ -1,11 +1,10 @@
-Okay, here's the explanation of your Image-Based Parking Occupancy Monitoring Innovation, written in simple English:
 
-### Simple Explanation: Image-Based Parking Occupancy Monitoring
+### Unlocking Parking Potential: AI-Powered Image Recognition for Real-Time Occupancy
 
 ![ss](./design/architecture.jpg)
 
 
-This is a smart system that helps check how full a parking lot is. It uses pictures to count cars and know the parking status. Our main goal is to get exact numbers for how many cars are parked.
+Managing parking can be hard. Our new system makes it easy! It uses smart AI (Artificial Intelligence) and pictures to show you exactly how many parking spots are taken right now. We use a special AI called YOLOv8 to do this. Our main goal is to give you a clear, exact count of parked cars so you can manage parking much better. The data collected is also used for statistical analysis and reporting.
 
 ![ss](./ss/struktur-folder.jpg)
 
@@ -18,6 +17,11 @@ The main thing this system uses is **pictures**. We can get these pictures in tw
 When the system gets a picture, **Artificial Intelligence (AI) with Machine Learning** does the hard work. Here's how:
 
 1.  **Getting the Photo Ready:** Our main computer program (a Python script) is made to take these picture files. It can get them from you uploading a file, from a folder on the computer, or straight from the cameras.
+
+Sample Photo Area Parkir
+
+![ss](./sample_images/capture.jpg)
+
 
 2.  **The "Watcher" Finds New Photos:**
     This is a very important part that makes everything automatic. There's a special small program called a "watcher" (it uses something like Python's `watchdog` tool). This watcher constantly looks at a specific folder (like your "storage_photo" folder).
