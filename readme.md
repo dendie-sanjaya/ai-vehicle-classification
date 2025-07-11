@@ -28,6 +28,10 @@ Sample Photo Area Parkir
 
     ![ss](./ss/1.jpg)
 
+    **watcher.py** 
+
+    ![script](./watcher.py)
+
     * If you put a new picture in that folder, or if an old picture changes, the watcher quickly finds it.
     * Once the watcher sees a change, it automatically tells the main program (`app.py`) to start working on that new or changed picture right away. This means you don't have to manually tell the system to check every new photo.
 
@@ -36,6 +40,8 @@ Sample Photo Area Parkir
     * **Tell Car Types:** It can even tell if they are cars, motorcycles, buses, or trucks.
     * **Check How Busy:** It can guess how full or busy the parking lot is.
     After looking at the picture, the AI gives us numbers and details.
+
+     ![script](./app.py)   
 
 4.  **Getting the Results Clear:** After the AI does its job, we take all the numbers and details (like car counts, types) and put them into a neat, easy-to-read list.
 
